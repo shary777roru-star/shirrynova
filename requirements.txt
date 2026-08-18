@@ -1,0 +1,4 @@
+Flask
+gunicorn
+werkzeug
+mysql-connector-python

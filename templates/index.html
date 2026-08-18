@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio Huellitas de Amor</title>
+    <!-- Si tu carpeta es 'style', cambia 'static' por 'style' aquí abajo -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>💖 Huellitas de Amor 🐾</h1>
+        <p class="subtitulo">Registra un animalito doméstico para buscarle un hogar lleno de amor</p>
+        
+        <form action="/registrar" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre de la mascota (ej. Luna)" required>
+            
+            <select name="tipo" required>
+                <option value="" disabled selected>✨ Selecciona el tipo de mascota</option>
+                <option value="🐶 Perrito">🐶 Perrito</option>
+                <option value="🐱 Gatito">🐱 Gatito</option>
+                <option value="🦜 Ave Doméstica">🦜 Ave Doméstica</option>
+            </select>
+            
+            <input type="text" name="edad" placeholder="Edad (ej. 2 meses, 1 año)" required>
+            
+            <button type="submit">✨ Dar en Adopción ✨</button>
+        </form>
+
+        <a href="/mascotas" class="enlace">👉 Ver catálogo de peluditos disponibles</a>
+    </div>
+</body>
+</html>
