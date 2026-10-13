@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIRRY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css')}}">
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='imagenes/logo-shirry.png')}}"/>
+</head>
+
+ <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    
+    <div class="navbar">
+        <a href="/index" class="logo">SHIRRY</a>
+        <img src="{{ url_for('static', filename='imagenes/logo-shirry.png')}}" width="80" height="60">
+
+        <div class="menu">
+            <a href="/ropa">ROPA</a>
+            <a href="/quienes-somos">QUIENES SOMOS</a>
+            <a href="/tiendas">TIENDAS</a>
+            <div class="perfil-contenedor">
+                <img src="{{ url_for('static', filename='imagenes/icono-perfil.png')}}" class="icono-usuario" width="50" height="50"> 
+                <div class="menu-desplegable">
+                    <ul class="opciones-perfil">
+                        <a href="/inicio-sesion">Inicio Sesion/Registro</a>  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<hr>
+<h2>VISTE DIFERENTE, DESTACA SIEMPRE</h2>
+<hr>
+    <!-- Example Code Start-->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='imagenes/foto-coleccion-mujer.webp')}}" aria-label="Marcador de posición: Primera diapositiva" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="1000" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="50%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".1em">1</text></svg>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='imagenes/coleccion-hombre-negro.jfif')}}"Marcador de posición: Segunda diapositiva" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="1000" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="50%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".1em">2</text></svg>
+        </div>
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='imagenes/hombre-mujer-coleccion.webp')}}"aria-label="Marcador de posición: Tercera diapositiva" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="1000" preserveAspectRatio="xMidYMid slice" role="img" width="600" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="50%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".1em">3</text></svg>
+        </div>
+      </div>
+    </div>
+    
+ <div class="container mt-5">
+
+<h2 class="text-center">Nuestros Productos</h2>
+<hr>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card">
+<img src="{{ url_for('static', filename='imagenes/hoodie-coleccion.webp')}}" class="card-img-top" height="500" width="400">
+<div class="card-body">
+<h5 class="card-title">HOODIE</h5>
+<p class="card-text">Buzo cómodo y moderno, ideal para el frío y para destacar con un estilo urbano. Perfecto para el día a día.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="{{ url_for('static', filename='imagenes/pantalon-coleccion.webp')}}" class="card-img-top" height="500" width="400">
+<div class="card-body">
+<h5 class="card-title">PANTALON</h5>
+<p class="card-text">Jean de diseño llamativo y único, pensado para quienes quieren resaltar con un look auténtico y lleno de personalidad.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="{{ url_for('static', filename='imagenes/camisa-coleccion.jfif')}}" class="card-img-top" height="500" width="400">
+<div class="card-body">
+<h5 class="card-title">CAMISA</h5>
+<p class="card-text">Prenda ligera con diseño artístico, perfecta para combinar elegancia y estilo casual en cualquier ocasión.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card">
+<img src="{{ url_for('static', filename='imagenes/guantes-abiertos-coleccion.webp')}}" class="card-img-top" height="500" width="400">
+<div class="card-body">
+<h5 class="card-title">GUANTES</h5>
+<p class="card-text">Guantes cómodos y funcionales, ideales para el uso diario con un toque original y diferente.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="{{ url_for('static', filename='imagenes/gorra-coleccion.webp')}}" class="card-img-top" height="500" width="400">
+<div class="card-body">
+<h5 class="card-title">GORRA</h5>
+<p class="card-text">Gorra moderna con diseño exclusivo, perfecta para complementar tu outfit con un estilo urbano y auténtico.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="{{ url_for('static', filename='imagenes/gorro-coleccion.webp')}}" class="card-img-top" height="500" width="400">
+<div class="card-body">
+<h5 class="card-title">GORRO</h5>
+<p class="card-text">Gorro llamativo y original, ideal para quienes buscan un accesorio único que robe miradas.</p>
+<a href="#" class="btn btn-dark">Comprar</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

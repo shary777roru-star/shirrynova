@@ -1,0 +1,155 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#f2f2f2;
+}
+
+.logo{
+    font-size:32px;
+    letter-spacing:8px;
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.menu a{
+    margin-left:40px;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.menu a:hover{
+    color:#0077ff;
+}
+
+
+/* La franja gris de fondo */
+footer {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* EL SECRETO: El contenedor que centra todo */
+.footer-center-container {
+    max-width: 900px;    /* Ajusta este ancho para que se vea más o menos estirado */
+    margin: 0 auto;      /* Esto centra el bloque entero en la pantalla */
+    display: flex;
+    justify-content: space-between; /* Redes a un lado, links al otro */
+    align-items: flex-start;
+}
+
+/* Bloque de redes sociales (Izquierda) */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* Bloque de columnas (Derecha) */
+.links-section {
+    display: flex;
+    gap: 0px; /* Espacio entre FILMS, TECH y CAREERS */
+}
+
+.column h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Texto legal de abajo */
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 11px;
+    color: #333;
+}
+
+/* cuadros */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+}
+
+.div-color{
+    padding: 0;
+    text-align: center;
+    color: rgb(224, 208, 218);
+    font-weight: bold;
+    font-size: 18px;
+    border: #fcdfdb solid 2px;
+}
+.div-color img {
+    width: 100%;
+    height: 100%;
+    display: block;   
+    object-fit: contain; 
+} 
+
+.rojo{
+    background-color: #FF6B6B;
+    grid-column: 3 / 2;
+    
+
+}
+
+
+.morado{
+    background-color: #A78BFA;
+     grid-column: 3 / -1;
+}
+
+.naranja{
+    background-color: #FF9F43;
+     grid-column: 2 / 4;
+}
+
+.rosa{
+    background-color: #FF6B9D;
+     grid-column: 1 / -1;
+}
+
+.green{
+    background-color: #31ca0b;
+     grid-column: 1 / -1;
+}
+
+.banner img{
+  width:100%;
+  height:100%;
+  display:block;
+}

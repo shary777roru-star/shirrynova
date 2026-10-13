@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIRRY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css')}}">
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='imagenes/logo-shirry.png')}}"/>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/index" class="logo">SHIRRY</a>
+        <img src="{{ url_for('static', filename='imagenes/logo-shirry.png')}}" width="80" height="60">
+
+        <div class="menu">
+            <a href="/ropa">ROPA</a>
+            <a href="/quienes-somos">QUIENES SOMOS</a>
+            <a href="/tiendas">TIENDAS</a>
+            <div class="perfil-contenedor">
+                <img src="{{ url_for('static', filename='imagenes/icono-perfil.png')}}" class="icono-usuario" width="50" height="50"> 
+                <div class="menu-desplegable">
+                    <ul class="opciones-perfil">
+                        <a href="/inicio-sesion">Inicio Sesion/Registro</a>  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<section class="banner">
+  <a href="/coleccion-nueva">
+    <img src="{{ url_for('static', filename='imagenes/gif-de-ropa.gif ')}}" alt="Banner animado con la nueva colección de ropa SHIRRY">
+    <section class="banner-texto">
+    <h2>NUEVAS COLECCIONES</h2>
+    </section>
+  </a>
+</section>
+
+<hr>
+<h2>VISTE DIFERENTE, DESTACA SIEMPRE</h2>
+<hr>
+
+<div class="pixar-grid">
+  <!-- El banner superior (grande) -->
+  <div class="item banner">
+    <img src="{{ url_for('static', filename='imagenes/Paloma.gif')}}" alt="Toy Story 5">
+  </div>
+
+  <!-- Bloque central de Carreras -->
+  <div class="item careers">
+    <div class="overlay-text">
+      <h2>¿COMO COMENZO SHIRRY?</h2>
+      <p>Este comenzo como una idea simple de unos estudiantes</p>
+    </div>
+  </div>
+
+  <!-- Las tarjetas pequeñas de abajo -->
+  <div class="item card"><img src="{{ url_for('static', filename='imagenes/POLAR DESIGNS.gif')}}"></div>
+  <div class="item card"><img src="{{ url_for('static', filename='imagenes/Chica.jfif')}}"></div>
+  <div class="item card"><img src="{{ url_for('static', filename='imagenes/Kanye West in the new issue of FORBES_ 📸 @jameltoppinphoto.jfif.jpg')}}"></div>
+  <div class="item card"><img src="{{ url_for('static', filename='imagenes/Gamboy.webp')}}"></div>
+  <div class="item card"><img src="{{ url_for('static', filename='imagenes/Sewing.jfif')}}"></div>
+  <div class="item card yellow-bg">
+    <div class="p-3 text-center">
+      <img src="{{ url_for('static', filename='imagenes/Michael y Prince.jfif')}}" class="small-img">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIRRY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css')}}">
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='imagenes/logo-shirry.png')}}"/>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/index" class="logo">SHIRRY</a>
+        <img src="{{ url_for('static', filename='imagenes/logo-shirry.png')}}" width="80" height="60">
+
+        <div class="menu">
+            <a href="/ropa">ROPA</a>
+            <a href="/quienes-somos">QUIENES SOMOS</a>
+            <a href="/tiendas">TIENDAS</a>
+            <div class="perfil-contenedor">
+                <img src="{{ url_for('static', filename='imagenes/icono-perfil.png')}}" class="icono-usuario" width="50" height="50"> 
+                <div class="menu-desplegable">
+                    <ul class="opciones-perfil">
+                        <a href="/inicio-sesion">Inicio Sesion/Registro</a>  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+
+<h2 class="text-center">Nuestros Productos</h2>
+<hr>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card">
+<img src="electro.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">electronicos</h5>
+<p class="card-text">promocionas electronicos (celulares, tv, audifonos, tablets. etc.).</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="ropa.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">ropa</h5>
+<p class="card-text">promociona tu ropa.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="hogar .png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title"> hogar/muebles </h5>
+<p class="card-text">promociona cosas del hogar.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card">
+<img src="games.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">JUEGOS</h5>
+<p class="card-text">promociona tus juegos.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="sport.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">DEPORTIVO</h5>
+<p class="card-text">promociona cosas desportivas.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="domesticos.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">electrodomesticos</h5>
+<p class="card-text">promociona electrodomesticos.</p>
+<a href="#" class="btn btn-dark">Comprar</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="container mt-5">
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card">
+<img src="electro.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">electronicos</h5>
+<p class="card-text">promocionas electronicos (celulares, tv, audifonos, tablets. etc.).</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="ropa.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">ropa</h5>
+<p class="card-text">promociona tu ropa.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="hogar .png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title"> hogar/muebles </h5>
+<p class="card-text">promociona cosas del hogar.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card">
+<img src="games.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">JUEGOS</h5>
+<p class="card-text">promociona tus juegos.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="sport.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">DEPORTIVO</h5>
+<p class="card-text">promociona cosas desportivas.</p>
+<button class="btn btn-dark">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="domesticos.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">electrodomesticos</h5>
+<p class="card-text">promociona electrodomesticos.</p>
+<a href="#" class="btn btn-dark">Comprar</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<hr>
+<h2>VISTE DIFERENTE, DESTACA SIEMPRE</h2>
+<hr>
+
+</body>
+</html>
